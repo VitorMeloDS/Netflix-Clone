@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather+Sans&family=Play&display=swap');
+
+
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preta);
+    font-family: 'Play', sans-serif;;
+    color: white;
+}
+
+/*cabeçalho da pagina*/
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: "Arial Black", Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(246, 0, 0);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #a56969;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)100%), url('/img/la-casa-de-papel.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2em 2em;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.5s ease all;
+    border-radius: 10px;
+}
+
+.botao:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px; 
+}
+
+/* titulos emcima dos filmes */
+
+.destaques{
+    margin-left: 10px;
+    margin-bottom: 1em;
+    color: #ffffff;
+    background-color: #E50914;
+    margin-right: 40px;
+}
+
+/* filmes e séries em alta */
+
+.carrosel-filmes{
+    margin-left: 2em;
+    margin-top: 4em;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    transition: 0.5s ease all;
+}
+
+.box-filme:hover{
+    opacity: 0.6;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+/* cor da página */
+
+
+    
+.light{
+    background:#fdfbfb;
+    color:#fff9f9;
+}
+
+.pg_cores{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#btnLight{
+    text-decoration: none;
+    padding: 1px 7px ;
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color: #fafafa;
+    color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnLight:hover{
+    background: #141414;
+    color: #ffffff;
+    transition: 0.5s ease all;
+}
+
+#btnDark{
+    text-decoration: none;
+    padding: 1px 7px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#btnDark:hover{
+    background: #000000;
+    color: #ffffff;
+    transition: 0.5s ease all;
+}
