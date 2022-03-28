@@ -52,7 +52,7 @@ header nav a:hover{
 /*filme principal*/
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)100%), url('/img/la-casa-de-papel.jpg');
+    background: linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)100%), url('../img/destaque/la-casa-de-papel.jpg');
     height: 400px;
     background-size: cover;
     display: flex;
